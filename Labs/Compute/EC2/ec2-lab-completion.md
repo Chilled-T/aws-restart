@@ -36,10 +36,14 @@ systemctl enable httpd
 systemctl start httpd
 echo '<html><h1>Hello From Your Web Server!</h1></html>' > /var/www/html/index.html
 ```
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/9362f320-8e2c-4ee9-a840-0b47f4a4d469" />
 
 Termination protection was set to **Enable** during configuration to prevent accidental deletion of the instance.
 
 The instance launched successfully and reached a **Running** state with all **3/3 status checks passed**.
+
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/10b3d5f9-2a42-4ab5-9c50-6550732e45c2" />
+
 
 ---
 
@@ -56,6 +60,9 @@ The **Status checks** tab confirmed that both checks had passed:
 The **Monitoring** tab displayed Amazon CloudWatch metrics for the instance. As the instance had only recently launched, metrics were still populating. CloudWatch provides five-minute interval basic monitoring by default, with the option to enable one-minute detailed monitoring.
 
 ### Instance Screenshot
+
+<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/1a76c03b-5770-49c6-8721-bd3a31ff1a15" />
+
 Using **Actions → Monitor and troubleshoot → Get Instance Screenshot**, a screenshot of the instance console was captured. The screenshot showed the instance booting **Amazon Linux (6.1.170-210.320.amzn2023.x86_64)**, confirming the operating system was loading correctly. This feature is particularly useful for diagnosing instances that are unreachable via SSH or RDP.
 
 ---
@@ -80,8 +87,12 @@ To allow web traffic, the **Web Server security group** was updated:
    - **Source:** Anywhere-IPv4 (0.0.0.0/0)
 5. Saved the rules
 
+<img width="1920" height="1080" alt="9" src="https://github.com/user-attachments/assets/542ad263-7b9d-4c15-93e6-235358a10297" />
+
 ### Result
 After refreshing the browser, the web server was successfully accessible, displaying:
+
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/21c8c7c3-b5b4-4e75-924e-7293b9240da0" />
 
 > **Hello From Your Web Server!**
 
@@ -98,6 +109,8 @@ Before resizing, the instance was stopped via **Instance state → Stop instance
 - **Stop protection:** Disabled
 - **Result:** Can stop
 
+<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/5ec5a224-5001-4b5f-a391-3645d41b9761" />
+
 The instance successfully transitioned to a **Stopped** state.
 
 ### Step 2 — Change the Instance Type
@@ -113,6 +126,8 @@ With the instance stopped, the instance type was changed:
 | **vCPUs** | 2 (1 core) | 2 (1 core) |
 | **On-Demand Linux pricing** | $0.0104/hr | $0.0208/hr |
 
+<img width="1920" height="1080" alt="15" src="https://github.com/user-attachments/assets/e74c2e57-c759-4106-8a3a-7a04296fda7f" />
+
 4. Clicked **Change instance type** to apply
 
 The console displayed a success banner: **Instance type changed successfully**.
@@ -125,10 +140,14 @@ The root EBS volume was expanded from 8 GiB to 10 GiB:
 3. Changed the **Size (GiB)** from 8 to **10**
 4. Clicked **Modify** and confirmed the operation
 
+<img width="1920" height="1080" alt="17" src="https://github.com/user-attachments/assets/2a11e6dc-2e72-42d3-9e90-e94f7842d597" />
+
 The confirmation dialog noted that the file system would need to be extended after the volume enters the optimising state — a standard step when expanding EBS volumes on a running instance.
 
 ### Step 4 — Start the Resized Instance
 The instance was restarted via **Instance state → Start instance**. The instance returned to a **Running** state with the upgraded t3.small instance type and expanded 10 GiB storage volume.
+
+<img width="1920" height="1080" alt="18" src="https://github.com/user-attachments/assets/9aa4f8dd-85b3-4c2c-8da5-0f80bd75fe5b" />
 
 ---
 
@@ -149,6 +168,8 @@ With protection disabled, the instance was successfully terminated via **Instanc
 
 - **Instance ID:** i-0ca05b6b1e5900717 (Web Server)
 - **Termination protection:** Disabled
+
+<img width="1920" height="1080" alt="19" src="https://github.com/user-attachments/assets/5170eba4-c238-426c-a6a7-8575d19928e3" />
 
 The instance was permanently terminated, completing the full EC2 instance lifecycle.
 
