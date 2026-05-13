@@ -44,6 +44,8 @@ This script runs automatically at first boot and does the following:
 3. Starts the service immediately
 4. Writes a simple HTML page to the Apache web root at `/var/www/html/index.html`
 
+<img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/e7b24a90-0119-4dab-96f3-a8e6b606ec0a" />
+
 ---
 
 ## Step 2: Launch the Instance
