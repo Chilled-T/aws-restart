@@ -4,7 +4,7 @@
 
 I have successfully completed the **AWS SimuLearn: File Systems in the Cloud** simulation-based learning module, offered through Amazon Web Services (AWS) Skill Builder.
 
-[AWS SimuLearn - File Systems in the Cloud Certificate.pdf](https://github.com/user-attachments/files/28025553/AWS.SimuLearn.-.File.Systems.in.the.Cloud.Certificate.pdf)
+<img width="1233" height="954" alt="image" src="https://github.com/user-attachments/assets/babb0738-d69f-42a8-9630-5fe77b2ce89a" />
 
 ## About the Course
 
