@@ -70,9 +70,7 @@ Output: Time the instance has been running in a readable format (e.g. `up 3 minu
 
 ---
 
-> 📸 **[INSERT SCREENSHOT 1 HERE]**  
-> *Screenshot showing the terminal output of the `whoami`, `hostname -s`, and `uptime -p` commands run in sequence.*  
-> Suggested filename: `screenshot_task2_basic_commands.png`
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 11-17-37" src="https://github.com/user-attachments/assets/6c6177e0-4474-4225-bb01-f4bc98e05c6c" />
 
 ---
 
@@ -135,9 +133,7 @@ Output: Displayed the UID (user ID), GID (primary group ID), and all groups the 
 
 ---
 
-> 📸 **[INSERT SCREENSHOT 2 HERE]**  
-> *Screenshot showing the terminal output of the `who -H -a`, `TZ=` date commands, `cal -j`, and `id ec2-user` commands.*  
-> Suggested filename: `screenshot_task2_system_info.png`
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 11-25-04" src="https://github.com/user-attachments/assets/2d0f6ad1-6f6c-438c-991a-05cb73c9f04c" />
 
 ---
 
@@ -174,9 +170,7 @@ Running `!!` after `date` re-executed the `date` command, confirming that `!!` r
 
 ---
 
-> 📸 **[INSERT SCREENSHOT 3 HERE]**  
-> *Screenshot showing the terminal output of the `history` command, the `Ctrl+R` reverse search in action, and the use of `!!` to rerun the last command.*  
-> Suggested filename: `screenshot_task3_history_search.png`
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 11-29-58" src="https://github.com/user-attachments/assets/2bfe068a-bb15-4586-b7e7-66dc59356c40" />
 
 ---
 
