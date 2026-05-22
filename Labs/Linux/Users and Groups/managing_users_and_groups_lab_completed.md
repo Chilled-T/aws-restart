@@ -13,8 +13,7 @@ Connected to the Amazon Linux EC2 instance via SSH using the provided `.pem` key
 ```bash
 ssh -i labsuser.pem ec2-user@<public-ip>
 ```
-
-> 📸 **[SCREENSHOT 1]** — Terminal showing successful SSH connection to the EC2 instance (prompt displays `ec2-user@ip-x-x-x-x`).
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 11-43-09" src="https://github.com/user-attachments/assets/50806beb-fbfb-4f66-9430-9460ca647f0a" />
 
 ---
 
@@ -25,9 +24,6 @@ ssh -i labsuser.pem ec2-user@<public-ip>
 ```bash
 pwd
 ```
-
-> 📸 **[SCREENSHOT 2]** — Terminal output of `pwd` confirming `/home/ec2-user`.
-
 ---
 
 ### Step 2 — Added first user (arosalez) and set password
@@ -36,9 +32,6 @@ pwd
 sudo useradd arosalez
 sudo passwd arosalez
 ```
-
-> 📸 **[SCREENSHOT 3]** — Terminal showing `useradd` and `passwd` commands for `arosalez`, with `passwd: all authentication tokens updated successfully` confirmation message.
-
 ---
 
 ### Step 3 — Added remaining users one by one
@@ -71,9 +64,6 @@ sudo passwd smartinez
 sudo useradd ssarkar
 sudo passwd ssarkar
 ```
-
-> 📸 **[SCREENSHOT 4]** — Terminal showing `useradd` and `passwd` commands being run for all remaining users, with success messages for each.
-
 ---
 
 ### Step 4 — Validated all users were created
@@ -81,10 +71,6 @@ sudo passwd ssarkar
 ```bash
 sudo cat /etc/passwd | cut -d: -f1
 ```
-
-> 📸 **[SCREENSHOT 5]** — Terminal output of `/etc/passwd` listing confirming all 10 users are present:
-> `arosalez`, `eowusu`, `jdoe`, `ljuan`, `mmajor`, `mjackson`, `nwolf`, `psantos`, `smartinez`, `ssarkar`
-
 ---
 
 ## Task 3: Create Groups
@@ -99,9 +85,6 @@ sudo groupadd Shipping
 sudo groupadd Managers
 sudo groupadd CEO
 ```
-
-> 📸 **[SCREENSHOT 6]** — Terminal showing all six `groupadd` commands executed successfully.
-
 ---
 
 ### Step 2 — Verified groups were created
@@ -109,9 +92,6 @@ sudo groupadd CEO
 ```bash
 cat /etc/group
 ```
-
-> 📸 **[SCREENSHOT 7]** — Terminal output of `/etc/group` showing the newly created groups: `Sales`, `HR`, `Finance`, `Shipping`, `Managers`, `CEO`.
-
 ---
 
 ### Step 3 — Added users to their groups
@@ -150,9 +130,6 @@ sudo usermod -a -G Shipping ec2-user
 sudo usermod -a -G Managers ec2-user
 sudo usermod -a -G CEO ec2-user
 ```
-
-> 📸 **[SCREENSHOT 8]** — Terminal showing `usermod` commands being run for each group assignment.
-
 ---
 
 ### Step 4 — Verified final group memberships
@@ -160,8 +137,8 @@ sudo usermod -a -G CEO ec2-user
 ```bash
 sudo cat /etc/group
 ```
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 12-18-41" src="https://github.com/user-attachments/assets/8247852b-ba75-465e-b565-202be7cb5d6e" />
 
-> 📸 **[SCREENSHOT 9]** — Terminal output confirming correct group memberships, expected to look like:
 >
 > ```
 > Sales:x:1014:arosalez,nwolf,ec2-user
@@ -183,8 +160,6 @@ su arosalez
 # Password: P@ssword1234!
 ```
 
-> 📸 **[SCREENSHOT 10]** — Terminal showing successful login as `arosalez` (prompt changes to `arosalez@ec2-user`).
-
 ---
 
 ### Step 2 — Verified current directory
@@ -193,8 +168,6 @@ su arosalez
 pwd
 ```
 
-> 📸 **[SCREENSHOT 11]** — Terminal output of `pwd` showing `/home/ec2-user`.
-
 ---
 
 ### Step 3 — Attempted to create a file (permission denied)
@@ -202,10 +175,7 @@ pwd
 ```bash
 touch myFile.txt
 ```
-
-> 📸 **[SCREENSHOT 12]** — Terminal showing the error:
 > `touch: cannot touch 'myFile.txt': Permission denied`
-
 ---
 
 ### Step 4 — Attempted sudo (not a sudoer)
@@ -213,10 +183,7 @@ touch myFile.txt
 ```bash
 sudo touch myFile.txt
 ```
-
-> 📸 **[SCREENSHOT 13]** — Terminal showing the error:
 > `arosalez is not in the sudoers file. This incident will be reported.`
-
 ---
 
 ### Step 5 — Exited back to ec2-user
@@ -224,9 +191,6 @@ sudo touch myFile.txt
 ```bash
 exit
 ```
-
-> 📸 **[SCREENSHOT 14]** — Terminal showing the `exit` command and return to the `ec2-user` prompt.
-
 ---
 
 ### Step 6 — Reviewed the security log
@@ -234,8 +198,8 @@ exit
 ```bash
 sudo cat /var/log/secure
 ```
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 12-24-14" src="https://github.com/user-attachments/assets/7073df5e-c55f-44c7-89ae-840f122a0de0" />
 
-> 📸 **[SCREENSHOT 15]** — Terminal output of `/var/log/secure` showing the logged sudo violation for `arosalez`, e.g.:
 > `sudo: arosalez : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/ec2-user ; USER=root ; COMMAND=/bin/touch myFile.txt`
 
 ---
