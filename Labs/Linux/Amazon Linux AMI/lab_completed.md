@@ -37,9 +37,7 @@ ssh -i labsuser.pem ec2-user@35.92.113.47
 
 Successfully connected to the Amazon Linux 2 EC2 instance. The terminal displayed the Amazon Linux 2 welcome banner along with a notice that AL2 End of Life is 2026-06-30, and a recommendation to migrate to Amazon Linux 2023.
 
-> 📸 **[INSERT SCREENSHOT 1 HERE]**  
-> *Screenshot showing the terminal after a successful SSH connection to the EC2 instance, displaying the Amazon Linux 2 welcome banner.*  
-> Suggested filename: `screenshot_ssh_connection.png`
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 10-43-31" src="https://github.com/user-attachments/assets/4465fb90-b2b9-4f9f-a518-0f9d6e5e3862" />
 
 ---
 
@@ -68,9 +66,7 @@ man man
 
 3. Reviewed the `DESCRIPTION` header, taking note of the numbered man page sections (e.g., Section 1 = executable programs/shell commands, Section 8 = system administration commands).
 
-> 📸 **[INSERT SCREENSHOT 2 HERE]**  
-> *Screenshot showing the man page open in the terminal, displaying the SYNOPSIS and/or DESCRIPTION section headers.*  
-> Suggested filename: `screenshot_man_page.png`
+<img width="1366" height="768" alt="Screenshot From 2026-05-21 10-51-34" src="https://github.com/user-attachments/assets/27d6e1f5-ac46-4d11-b019-f2f43fa01f85" />
 
 4. Exited the man pages by pressing `q`.
 
