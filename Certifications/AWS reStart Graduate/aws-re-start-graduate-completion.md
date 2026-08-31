@@ -2,6 +2,8 @@
 
 ## Credential & Badge of Completion
 
+<img width="600" height="600" alt="aws-re-start-graduate" src="https://github.com/user-attachments/assets/2b589d06-4279-4568-a40e-51bb2dd459c7" />
+
 I have successfully graduated from the **AWS re/Start** program and earned the official **AWS re/Start Graduate** digital badge, issued by Amazon Web Services (AWS) Training and Certification via Credly.
 
 ## About the Program
