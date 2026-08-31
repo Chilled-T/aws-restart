@@ -2,7 +2,7 @@
 
 ## Certificate of Completion
 
-
+<img width="1024" height="726" alt="AWS - Generative AI for Decision Makers Certificate" src="https://github.com/user-attachments/assets/c3ff06dd-9239-49ea-9904-65e83e1b0f92" />
 
 I have successfully completed the **Generative AI for Decision Makers** training course, awarded by **Praesignis**.
 
