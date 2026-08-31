@@ -1,7 +1,7 @@
 # AWS re/Start Programme Portfolio
 
 ![AWS re/Start](https://img.shields.io/badge/AWS-re%2FStart-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
 ## About This Portfolio
 
