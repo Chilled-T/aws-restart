@@ -2,7 +2,7 @@
 
 ## Certificate of Completion
 
-
+[AWS - AI Practitioner Learning Plan Certificate.pdf](https://github.com/user-attachments/files/31639285/AWS.-.AI.Practitioner.Learning.Plan.Certificate.pdf)
 
 I have successfully completed the **AI Practitioner Learning Plan** training course, awarded by **Praesignis**.
 
