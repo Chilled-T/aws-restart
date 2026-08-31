@@ -2,6 +2,8 @@
 
 ## Credential & Badge of Completion
 
+<img width="601" height="601" alt="aws-cloud-quest-cloud-practitioner-training-badge" src="https://github.com/user-attachments/assets/fab2c40d-1b0d-4bea-b24d-a3bba579a7a7" />
+
 I have successfully earned the **AWS Cloud Quest: Cloud Practitioner** digital badge, issued by Amazon Web Services (AWS) Training and Certification via Credly.
 
 ## About the Credential
